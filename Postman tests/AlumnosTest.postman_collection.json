@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "db7ff139-f71c-4867-bb80-5569cdb814eb",
+		"name": "AlumnosTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alumnos",
+			"item": [
+				{
+					"name": "/api/alumnos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44347/api/alumnos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44347",
+							"path": [
+								"api",
+								"alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/alumnos/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44347/api/alumnos/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44347",
+							"path": [
+								"api",
+								"alumnos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/alumnos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\":\"bee\",\r\n    \"Edad\":32\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44347/api/alumnos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44347",
+							"path": [
+								"api",
+								"alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/alumnos/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":5,\r\n    \"Nombre\":\"Pancho loco\",\r\n    \"Edad\":21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44347/api/alumnos/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44347",
+							"path": [
+								"api",
+								"alumnos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/alumnos/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44347/api/alumnos/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44347",
+							"path": [
+								"api",
+								"alumnos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Matriculas",
+			"item": [
+				{
+					"name": "/api/matriculas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44347/api/matriculas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44347",
+							"path": [
+								"api",
+								"matriculas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/matriculas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\":\"2020-01-01\",\r\n    \"idalumno\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44347/api/matriculas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44347",
+							"path": [
+								"api",
+								"matriculas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
